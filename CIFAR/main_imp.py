@@ -74,7 +74,7 @@ def main():
     print(args)
 
     torch.cuda.set_device(int(args.gpu))
-    args.save_dir = "/LTH_models/"+str(args.prune_type) + '/' + str(args.dataset) + '/' + str(args.arch)+'/' + "rewind_epoch_"+str(args.rewind_epoch)  + '/seed' + str(args.seed)
+    args.save_dir = "LTH_models/"+str(args.prune_type) + '/' + str(args.dataset) + '/' + str(args.arch)+'/' + "rewind_epoch_"+str(args.rewind_epoch)  + '/seed' + str(args.seed)
     # args.save_dir = "/scratch-shared/sliu/LTH_models/"+str(args.prune_type) + '/' + str(args.dataset) + '/' + str(args.arch)+'/'  + '/seed' + str(args.seed)
     os.makedirs(args.save_dir, exist_ok=True)
     print ("making folder")
